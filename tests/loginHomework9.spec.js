@@ -1,7 +1,6 @@
 import { test } from "@playwright/test"
-import { expect } from "@playwright/test"
 import { chromium } from "@playwright/test"
-import { LoginPageLocators } from "../loginPageLocators"
+import { LoginPageLocators } from "../page-object/LoginPage"
 
 let loginData = [
     {
