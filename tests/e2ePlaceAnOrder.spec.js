@@ -2,7 +2,7 @@ import { test } from "@playwright/test"
 import LoginPage from "../page-object/LoginPage.js"
 import ProguctsPage from "../page-object/ProductsPage.js"
 import CartPage from "../page-object/CartPage.js"
-test.describe.only("Order Sauce Labs Backpack item", ()=>{
+test.describe("Order Sauce Labs Backpack item", ()=>{
     test.beforeEach(async({page})=>{
         let loginPage = new LoginPage(page)
         await loginPage.performLogin()
