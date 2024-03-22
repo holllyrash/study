@@ -13,6 +13,4 @@ await download.saveAs(path);
 
 expect(
     (await fs.promises.stat((await download.path()) as string)).size).toBeGreaterThan(5)
-
-await download.delete()
  })
