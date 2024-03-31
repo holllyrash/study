@@ -1,7 +1,7 @@
 import { test, expect } from "@playwright/test"
 import fs from "fs"
 
-test.only(`Download "industry.csv" file`, async({page})=>{
+test(`Download "industry.csv" file`, async({page})=>{
 
 await page.goto("https://wsform.com/knowledgebase/sample-csv-files/")
 const downloadPromise = page.waitForEvent('download')
